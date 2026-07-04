@@ -163,7 +163,7 @@
     <!--========== 메인 스타트 ==========-->
     <main id="page" class="flex min-h-screen flex-col">
       <!-- =============== 섹션 1. Hero =============== -->
-      <section id="hero" class="section py-16 md:py-24 fx-bg-bubbles">
+      <section id="hero" class="section py-16 md:py-20 fx-bg-bubbles">
         <div
           class="container mx-auto grid max-w-7xl grid-cols-1 
           items-center gap-10 px-10 md:grid-cols-2 surface-hero px-10 py-14">
@@ -205,113 +205,26 @@
           </figure>
         </div>
       </section>
-
       <hr class="divider" />
-      <!-- =============== 섹션 2. 문제원인 =============== -->
-      <section id="problem-deepen" class="section-alt py-16 md:py-20 fx-bg-soft-lines">
-        <div class="container mx-auto max-w-5xl space-y-8 px-4">
-          <header class="space-y-3 text-center">
-            <p class="header-badge-riverse">자꾸만 악순환에 빠지는 이유</p>
-            <h2 class="header-head-text">
-              <span>매번 다른 대행사를 알아봐도</span><br class="hidden md:block"/>
-              결국 결과는 비슷하지 않으셨나요?
-            </h2>
-            <p class="header-sub-text highlight-text">
-              이제 더 이상 아까운 돈과 시간을 낭비하지 마세요.
-            </p>
-          </header>
-
-          <!-- 🔽 grid를 2열로 -->
-          <div class="grid gap-6 md:grid-cols-2">
-            <!-- ① 좌: 인포그래픽 -->
-            <figure
-              class="media-frame mx-auto md:mx-0
-               w-full max-w-[360px] aspect-square
-               md:w-full md:max-w-none md:aspect-[4/5] md:min-h-[1100px]">
-              <picture>
-                <!-- 💻 PC(768px 이상)에서는 4:5 이미지 -->
-                <source 
-                  media="(min-width:768px)" 
-                  srcset="./img/problem001-PC.png" />
-              
-                <!-- 📱 모바일(768px 미만)에서는 1:1 이미지 -->
-                <img src="./img/problem001-MO-1x1.png" 
-                    alt="저가 DB 구조 → 허수/부재/거부로 이어지는 흐름" 
-                    class="img-base w-full h-full object-cover" />
-              </picture>
-            </figure>
-
-            <!-- ② 우: 텍스트 묶음 (article + aside) -->
-            <div class="grid gap-6">
-              <article
-                class="problem-box space-y-4 p-6">
-                <p class="content-text-lg">
-                  많은 분들이 보통 광고대행사, CPA실행사, 제휴마케팅 회사 이 3곳을 통해 DB를 구매합니다.
-                  <br /><br />이 모든 회사에서 직접 광고비를 써서 개발한 DB에 마진을 붙여 판매합니다.
-
-                  하지만 <span class="highlight-text">부재, 상담거부, 본인아님, 허수 DB</span>가 반복되는 이유는 매우 간단합니다.
-                  <br><br><u>DB를 최대한 저렴하게 뽑을수록 이윤이 커지기에, 랜딩페이지 제작과 광고 운영에 최소한의 노력만을 쏟기 때문입니다.</u>
-                </p>
-                <p class="content-text-lg">
-                  그 결과, '미리캔버스 이미지 달랑 몇 장 이어붙여 랜딩페이지'를 만들거나 '이미지 1~2장에 입력폼만 짧막하게 붙인 이벤트 페이지'가 대다수이지요.
-                  <br><br>
-                  <span class="highlight-bg">이상태로 어그로만 끌어 말그대로 "입력만 시키니" DB유입은 많으나 부재나 상담거부가 숱한 허수 투성이 DB가 되기 쉽상입니다.</span>
-                </p>
-                <p class="content-text-lg">
-                  게다가 엎친 데 덮친 격으로 별다른 상담없이 통화 종료가 되는 단순 문의임에도 불구하고 찰나의 통화 연결만 됬다하면 승인DB 처리해버리며,
-                  <u>“우리는 DB만 전달하는 거지, 상담은 영업자의 몫이다”라며 선을 긋는 업체들도 적지 않습니다.</u> 물론 일부는 타당하고 맞는말이긴 합니다. 
-                </p>
-                <p class="content-text-lg">
-                  다만, 요리를 하는 셰프에겐 최소한 기본적으로 다듬어진 식재료를 전해줘야지. 호미와 낫을 주고 손에 흙 묻혀가며 직접 캐서 요리하라는식의 언사는 앞뒤가 안맞는 넌센스인것이지요.
-                  <br><br>그래서 그런지 저희에게 상담 주시는분들이 <span class="highlight-bg">"DB를 사니까 매출은 좀 났었는데, 부재가 너무 많고, 정작 남는것도 없었다" 라며 공통적으로 말씀하시는것 같습니다.</span>
-                </p>
-                <p class="content-text-lg">
-                  <span class="highlight-text">우리가 비싸게 구매했음에도 불구하고 질낮은 DB를 쓰는 이유가 바로 이 때문이지요.</span>
-                  설상가상으로, 우리에게 시간과 에너지는 늘 부족합니다. 하루 종일 고객을 응대하고 주어진 업무만 처리하는 것만으로도 버겁습니다.
-                </p>
-                <p class="content-text-lg">
-                  그러니 우리가 자꾸만 비용과 시간을 낭비함에도 불구하고 또 다른 대행사를 찾는 것만이 유일한 해결책이라 여기기 쉽고 그저 그렇게 <span class="highlight-text">비효율적인 챗바퀴를 반복하는 것입니다.</span>
-                </p>
-              </article>
-              <aside class="pain-point-box p-5">
-                <strong class="content-text-strong highlight-text">여러분 잘못이 아닙니다.</strong>
-                <p class="content-text-lg">
-                  애초에 ‘CPA 마케팅'이라는 시스템이 가진 한계일 뿐입니다.
-                  누구나 겪는 이 악순환을 끊으려면, 이젠 '남이 만든 DB를 구매할 게' 아니라
-                  <span class="highlight-text">우리 영업팀이 필요한 DB를 원가로 자체 개발하며 DB품질은 점진적으로 높이는 시스템</span>을 운영해야 할 때입니다.
-                </p>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr class="divider" />
-
-      <!-- =============== 섹션 3. Solution =============== -->
-      <section id="solution" class="section py-16 md:py-24 fx-bg-bubbles">
+      
+      <!-- =============== 섹션 2. 욕구 충족 가능한 이유 =============== -->
+      <section id="solution" class="section py-16 md:py-20 fx-bg-soft-lines">
         <div class="container mx-auto max-w-6xl space-y-12 px-4">
           <header class="space-y-4 text-center">
-            <p class="header-badge-riverse">고효율을 위한 One-Stop-솔루션</p>
+            <p class="header-badge-riverse">허수 원천 차단, 3중 필터링 시스템</p>
             <h2 class="header-head-text md:text-3xl ">
-              광고? 몰라도 됩니다.<br>
-              <Span class="highlight-strong-text">광고형 홈페이지 기획·제작·광고운영·DB품질 개선까지</Span>
+              개인회생DB, 애초에 허수가 나올 수 없게 설계했습니다<br>
+              <Span class="highlight-strong-text">본인인증, 자격검증, 중복접수 차단까지 3중으로 거르고</Span>
               <br class="hidden md:block"/>
-              모든 과정을 한 번에 해결해드립니다.
+              혹시 모를 허수는 전액환불로 끝까지 책임집니다
             </h2>
             <p class="header-sub-text">
-              전략과 수정 방향만 함께 논의하고 편히 결과만 받아보세요.
-            </p>
-            <p class="header-lead-text">
-              광고를 할 줄 몰라도 괜찮습니다. <br class="hidden md:block"/>
-              심지어 홈페이지가 없어도 좋습니다. <br><br>
-              <span class="highlight-bg">복잡한 세팅, 운영, 수정, 개선 — 이 모두를 저희가 맡습니다.</span><br class="hidden md:block"/>
-              단지, 갈수록 좋아지는 DB로 매출만 극대화하세요.
+              이젠 정말 수임에만 신경쓰세요
             </p>
           </header>
 
-          <!-- 3단 절차 (아이콘/이미지 매칭 영역) -->
-          <div class="grid gap-6 md:grid-cols-3">
+          <!-- 4단 절차 (아이콘/이미지 매칭 영역) -->
+          <div class="grid gap-6 md:grid-cols-2">
             <!-- step 1 -->
             <article class="surface-card p-6 fx-card-glow-primary">
               <figure
@@ -321,11 +234,9 @@
                   alt=""
                   class="img-base w-full h-full" />
               </figure>
-              <h3 class="content-text-strong mb-2 highlight-text">1 ) 1:1 무료 진단상담</h3>
+              <h3 class="content-text-strong mb-2 highlight-text">본인인증 게이트</h3>
               <p class="header-lead-text">
-                업종, 현재 상황, 광고 경험, 목표 등을 심도 있게 듣고 진행 여부를 논의합니다.
-                <br />
-                  <em class="content-text-sm">*불법 및 비윤리적 광고는 진행하지 않습니다.</em>
+                본인인증을 하지 않으면 신청폼 제출이 아예 불가하기에<br class="hidden md:block"/>결번,장난신청,본인아님,연락불가 리스크를 최소화 합니다.
               </p>
             </article>
 
@@ -338,10 +249,11 @@
                   alt=""
                   class="img-base w-full h-full" />
               </figure>
-              <h3 class="content-text-strong mb-2 highlight-text">2 ) 계약</h3>
+              <h3 class="content-text-strong mb-2 highlight-text">자격조건 실시간 검증</h3>
               <p class="header-lead-text">
-                진행이 확정되면 계약서를 작성하고, 비용 효율과 DB 품질을
-                최대화할 수 있는 방향을 제안드립니다.
+                채무금액, 소득수준 등 개인회생 필수 자격 조건을 입력 즉시 검증합니다.
+                기준 미달 시 다음 입력칸이 비활성화되거나 최종 신청 버튼이 눌리지 않습니다.
+                자격 미달자는 애초에 DB를 제출할수가 없습니다.
               </p>
             </article>
 
@@ -354,34 +266,371 @@
                   alt="일정&집행"
                   class="img-base w-full h-full" />
               </figure>
-              <h3 class="content-text-strong mb-2 highlight-text">3 ) 일정&집행</h3>
+              <h3 class="content-text-strong mb-2 highlight-text">고객 중복 접수 차단</h3>
               <p class="header-lead-text">
-                광고형 홈페이지 운영 및 광고집행 일정을 조율하고 온보딩을 마칩니다.
+                한 번 접수된 번호는 시스템에 남아 두 번 다시 신청할 수 없습니다.
+         같은 고객이 중복으로 잡혀 비용이 두 번 청구되는 일 자체를 방지합니다.
+              </p>
+            </article>
+            <!-- step 4 -->
+            <article class="surface-card p-6 fx-card-glow-primary">
+              <figure
+                class="media-frame mb-4 grid aspect-video place-items-center">
+                <img
+                  src="./img/solution-up-003.png"
+                  alt="일정&집행"
+                  class="img-base w-full h-full" />
+              </figure>
+              <h3 class="content-text-strong mb-2 highlight-text">허위 DB, 100% 전액환불</h3>
+              <p class="header-lead-text">
+                이 모든 과정을 거치고도 허위 DB로 확인될시 100% 전액환불을 보장합니다.
               </p>
             </article>
           </div>
-          <!-- 섹션3-하단: header -->
-          <header class="space-y-4 text-center max-w-3xl mx-auto">
-            <!--헤드라인 -->
+        </div>
+      </section>
+      <hr class="divider" />
+      <!-- =============== 섹션 3. 성과 / 증거(Proof) =============== -->
+      <section id="proof" class="section-alt py-16 md:py-20 fx-bg-soft-lines">
+        <div class="container mx-auto max-w-6xl px-4">
+          <header class="text-center max-w-3xl mx-auto">
+            <p class="header-badge-riverse mb-3">실제 성과사례</p>
+            <h2 class="header-head-text md:text-3xl">
+              고품질 개인회생DB로 분위기가 달라진<br class="hidden md:inline" />
+              <span class="highlight-strong-text">사무소의 실제 이야기를 확인해보세요</span>
+            </h2>
+            <p class="header-sub-text mt-4">
+              깐깐하게 걸러낸 실시간 DB,<br class="hidden md:inline" />상담의 질부터 달라집니다
+            </p>
+          </header>
+          <!-- 그리드 박스-->
+          <div class="mt-12 grid gap-8 md:grid-cols-2 text-center sm:text-left">
+          
+            <!--  1번 카드 -->
+            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
+              <!-- 상단: 업종라벨+헤드+서브-->
+              <header class="space-y-2">
+                <span class="content-badge-main px-3 py-1">
+                  개인회생·개인파산
+                </span>
+                <h3 class="content-text-strong highlight-text">
+                  의뢰인과 상담이 좋아지고 있습니다.
+                </h3>
+                <p class="content-text-lg">
+                  “홈페이지 개선 이후에 갈수록 부재가 줄고, <span class="highlight-bg">회생파산 의뢰인들과 상담이 수월해지네요.</span> 계약으로 이어지는 비중도 꾸준히 늘고있습니다.”
+                </p>
+              </header>
+              <!-- 중단: 비포 애프터 핵심수치 -->
+              <div class="grid gap-4 md:grid-cols-2 justify-items-center text-center">
+                <div>
+                  <p class="content-text-strong mb-1">DB갯수</p>
+                  <p class="content-text-lg">
+                    일평균 <span class=" highlight-text">8~15건</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="content-text-strong mb-1">수임률</p>
+                  <p class="content-text-lg">
+                    월평균 <span class=" highlight-text">10~15%</span>
+                  </p>
+                </div>
+              </div>
+              <!-- 하단: 카톡캡처 + 성과캡쳐-->
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
+                <!-- 카톡 캡처대화 (2장) -->
+                <div class="grid gap-3 grid-cols-2">
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/debtworkout-kakao001.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/debtworkout-kakao002.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </article>
+            <!-- 2번 카드 -->
+            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
+              <!-- 상단: 업종라벨+헤드+서브-->
+              <header class="space-y-2">
+                <span class="content-badge-main px-3 py-1">
+                  대출·대부중개
+                </span>
+                <h3 class="content-text-strong highlight-text">
+                  영업이 점점 수월해지네요
+                </h3>
+                <p class="content-text-lg">
+                  <span class="highlight-bg">“디비 품질도 좋고 단가도 마음에 듭니다.</span> 영업이 점점 수월해지는것도 사실입니다."
+                </p>
+              </header>
+              <!-- 중단: 비포 애프터 핵심수치 -->
+              <div class="grid gap-4 md:grid-cols-2 justify-items-center text-center">
+                <div>
+                  <p class="content-text-strong mb-1">DB갯수</p>
+                  <p class="content-text-lg">
+                    일평균 <span class=" highlight-text">8~15건</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="content-text-strong mb-1">수임률</p>
+                  <p class="content-text-lg">
+                    월평균 <span class=" highlight-text">10~15%</span>
+                  </p>
+                </div>
+              </div>
+              <!-- 하단: 카톡캡처 + 성과캡쳐-->
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
+                <!-- 카톡 캡처대화 (2장) -->
+                <div class="grid gap-3 grid-cols-2">
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/loan-kakao001.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/loan-kakao002.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </article>
+            <!-- 3번 카드 -->
+             <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
+              <!-- 상단: 업종 라벨+헤드+서브-->
+              <header class="space-y-2">
+                <span class="content-badge-main px-3 py-1">
+                  보험·리모델링
+                </span>
+                <h3 class="content-text-strong highlight-text">
+                  FC들 월납 2,000 이상 되는거 같아요
+                </h3>
+                <p class="content-text-lg">
+                  <span class="highlight-bg">"DB단가도 절반 이상 줄었는데, DB질은 오히려 좋아졌네요.</span> 팀전체 에너지가 달라졌어요."
+                </p>
+              </header>
+              <!-- 중단: 비포 애프터 핵심수치 -->
+              <div class="grid gap-4 md:grid-cols-2 justify-items-center text-center">
+                <div>
+                  <p class="content-text-strong mb-1">DB갯수</p>
+                  <p class="content-text-lg">
+                    일평균 <span class=" highlight-text">8~15건</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="content-text-strong mb-1">수임률</p>
+                  <p class="content-text-lg">
+                    월평균 <span class=" highlight-text">10~15%</span>
+                  </p>
+                </div>
+              </div>
+              <!-- 하단: 카톡캡처 + 성과캡쳐-->
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
+                <!-- 카톡 캡처대화 (2장) -->
+                <div class="grid gap-3 grid-cols-2">
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/insurance-kakao001.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/insurance-kakao002.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </article>
+            <!-- 4번 카드 -->
+            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
+              <!-- 상단: 업종 라벨+헤드+서브-->
+              <header class="space-y-2">
+                <span class="content-badge-main px-3 py-1">
+                  정책자금
+                </span>
+                <h3 class="content-text-strong highlight-text">
+                  미팅 일정이 벌써 꽉찼어요
+                </h3>
+                <p class="content-text-lg">
+                  "예전에 부재랑 허수때문에 고생했습니다. <br class="block md:hidden" /><span class="highlight-bg">홈페이지랑 광고운영 함께 맡긴게 확실히 좋네요."</span>
+                </p>
+              </header>
+              <!-- 중단: 비포 애프터 핵심수치 -->
+              <div class="grid gap-4 md:grid-cols-2 justify-items-center text-center">
+                <div>
+                  <p class="content-text-strong mb-1">DB갯수</p>
+                  <p class="content-text-lg">
+                    일평균 <span class=" highlight-text">8~15건</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="content-text-strong mb-1">수임률</p>
+                  <p class="content-text-lg">
+                    월평균 <span class=" highlight-text">10~15%</span>
+                  </p>
+                </div>
+              </div>
+              <!-- 하단: 카톡캡처 + 성과캡쳐-->
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
+                <!-- 카톡 캡처대화 (2장) -->
+                <div class="grid gap-3 grid-cols-2">
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/policyfunds-kakao001.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/policyfunds-kakao003.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </article>
+            <!-- 5번 카드 -->
+            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
+              <!-- 상단: 업종 라벨+헤드+서브-->
+              <header class="space-y-2">
+                <span class="content-badge-main px-3 py-1">
+                  인터넷 가입
+                </span>
+                <h3 class="content-text-strong highlight-text">
+                  이번주 부재율 20%대에요
+                </h3>
+                <p class="content-text-lg">
+                 "예전에 DB하나에 2만원 넘었는데, <span class="highlight-bg">지금은 훨씬 저렴해서 좋네요. 실접수율도 많이 올랐습니다."</span>
+                </p>
+              </header>
+              <!-- 중단: 비포 애프터 핵심수치 -->
+              <div class="grid gap-4 md:grid-cols-2 justify-items-center text-center">
+                <div>
+                  <p class="content-text-strong mb-1">DB갯수</p>
+                  <p class="content-text-lg">
+                    일평균 <span class=" highlight-text">8~15건</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="content-text-strong mb-1">수임률</p>
+                  <p class="content-text-lg">
+                    월평균 <span class=" highlight-text">10~15%</span>
+                  </p>
+                </div>
+              </div>
+              <!-- 하단: 카톡캡처 + 성과캡쳐-->
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
+                <!-- 카톡 캡처대화 (2장) -->
+                <div class="grid gap-3 grid-cols-2">
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/Internet-kakao001.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/Internet-kakao002.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </article>
+            <!-- 6번 카드 -->
+            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
+              <!-- 상단: 업종 라벨+헤드+서브-->
+              <header class="space-y-2">
+                <span class="content-badge-main px-3 py-1">
+                  두피관리
+                </span>
+                <h3 class="content-text-strong highlight-text">
+                 DB 잠깐 멈춰달라고 하드라구요
+                </h3>
+                <p class="content-text-lg">
+                  "초반까지만 해도 부재가 꽤 있었는데, 지금은 많이 줄었습니다. <span class="highlight-bg">방문체험 하시는 고객분들이 늘었어요."</span>
+                </p>
+              </header>
+              <!-- 중단: 비포 애프터 핵심수치 -->
+              <div class="grid gap-4 md:grid-cols-2 justify-items-center text-center">
+                <div>
+                  <p class="content-text-strong mb-1">DB갯수</p>
+                  <p class="content-text-lg">
+                    일평균 <span class=" highlight-text">8~15건</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="content-text-strong mb-1">수임률</p>
+                  <p class="content-text-lg">
+                    월평균 <span class=" highlight-text">10~15%</span>
+                  </p>
+                </div>
+              </div>
+              <!-- 하단: 카톡캡처 + 성과캡쳐-->
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
+                <!-- 카톡 캡처대화 (2장) -->
+                <div class="grid gap-3 grid-cols-2">
+                  <figure class="space-y-2">
+                    <img
+                      src="./img//scalp-kakao001.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                  <figure class="space-y-2">
+                    <img
+                      src="./img/scalp-kakao002.jpg"
+                      alt=""
+                      class="img-base w-full h-full object-cover"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+      <!-- =============== 섹션 4. 개인회생 CPA서비스 소개 =============== -->
+      <section id="solution" class="section py-16 md:py-20 fx-bg-soft-lines">
+        <div class="container mx-auto max-w-6xl space-y-12 px-4">
+          <header class="space-y-4 text-center">
             <p class="header-badge-riverse">All-in-One 광고 프로세스</p>
             <h2 class="header-head-text">
               체계적인 프로세스로<br class="hidden md:block"/><span class="highlight-strong-text"> 광고를 지속적으로 개선합니다.</span>
                </h2>
-            <!-- 서브헤드 -->
             <p class="header-sub-text">
               <span class="highlight-text">기획 → 제작 → 운영 → 개선</span>,
               <br class="hidden md:block" />
               모든 절차를 일관된 시스템으로 연결해  
               효율과 결과를 동시에 높입니다.
             </p>
-            <!--리드-->
             <p class="header-lead-text">
               단순히 예산을 집행하는 것이 아니라
               <span class="highlight-bg">광고형 홈페이지 콘텐츠·매체·DB 품질을 끊임없이 분석·개선하며 광고의 성과를 장기적으로 성장시킵니다.</span>
             </p>
-
           </header>
-          <!-- 섹션3 하단 - 4단 서비스 제공절차 -->
+          <!-- 4단 절차 (아이콘/이미지 매칭 영역) -->
           <div class="grid gap-6 md:grid-cols-2">
             <article class="surface-card p-4 fx-card-glow-primary">
               <!-- 아이콘 시작-->
@@ -437,419 +686,9 @@
           </div>
         </div>
       </section>
-
       <hr class="divider" />
-
-      <!-- =============== 섹션 4. 성과 / 증거(Proof) =============== -->
-      <section id="proof" class="section-alt py-16 md:py-28 fx-bg-soft-lines">
-        <div class="container mx-auto max-w-6xl px-4">
-          <!-- 섹션4 헤더 시작-->
-          <header class="text-center max-w-3xl mx-auto">
-            <p class="header-badge-riverse mb-3">업종별 실제 성과사례</p>
-            <h2 class="header-head-text md:text-3xl">
-              광고형 홈페이지 운영 서비스로<br class="hidden md:inline" />
-
-              <span class="highlight-strong-text">DB 비용은 줄이고 품질은 높이세요</span>
-            </h2>
-            <p class="header-sub-text mt-4">
-              광고형 홈페이지를 자체 운영하며 반복 개선하면
-              <br class="hidden md:block" /><span class="highlight-text">동일한 비용으로 더 많은 DB를 확보하고 상담의 품질까지 향상됩니다.</span>
-            </p>
-          </header>
-          <!-- 섹션4 헤더 끝-->
-          <!-- 섹션4 그리드 박스-->
-          <div class="mt-12 grid gap-8 md:grid-cols-2 text-center sm:text-left">
-            
-            <!--  1번 카드 -->
-            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
-              <!-- 상단: 업종라벨+헤드+서브-->
-              <header class="space-y-2">
-                <span class="content-badge-main px-3 py-1">
-                  개인회생·개인파산
-                </span>
-                <h3 class="content-text-strong highlight-text">
-                  의뢰인과 상담이 좋아지고 있습니다.
-                </h3>
-                <p class="content-text-lg">
-                  “홈페이지 개선 이후에 갈수록 부재가 줄고, <span class="highlight-bg">회생파산 의뢰인들과 상담이 수월해지네요.</span> 계약으로 이어지는 비중도 꾸준히 늘고있습니다.”
-                </p>
-              </header>
-              <!-- 중단: 비포 애프터 핵심수치 -->
-              <div class="grid gap-3 md:grid-cols-3">
-                <div>
-                  <p class="content-text-strong mb-1">DB단가</p>
-                  <p class="content-text-lg">
-                    8만원→<span class=" highlight-text">2.7~3만원</span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">하루 DB</p>
-                  <p class="content-text-lg">
-                    일평균 <span class=" highlight-text">14~20건</span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">부재 / 허수</p>
-                  <p class="content-text-lg">
-                    지속개선+<span class=" highlight-text">품질향상</span>
-                  </p>
-                </div>
-              </div>
-              <!-- 하단: 카톡캡처 + 성과캡쳐-->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡 캡처대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/debtworkout-kakao001.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/debtworkout-kakao002.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                </div>
-                <!-- 광고 관리자 성과 캡쳐 -->
-                <figure class="space-y-2">
-                  <img
-                    src="./img/debtworkout-data001.png"
-                    alt=""
-                    class="img-base w-full h-full object-cover"
-                    />
-                </figure>
-              </div>
-            </article>
-            <!-- 2번 카드: 대출 -->
-            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
-              <!-- 상단: 업종라벨+헤드+서브-->
-              <header class="space-y-2">
-                <span class="content-badge-main px-3 py-1">
-                  대출·대부중개
-                </span>
-                <h3 class="content-text-strong highlight-text">
-                  영업이 점점 수월해지네요
-                </h3>
-                <p class="content-text-lg">
-                  <span class="highlight-bg">“디비 품질도 좋고 단가도 마음에 듭니다.</span> 영업이 점점 수월해지는것도 사실입니다."
-                </p>
-              </header>
-              <!-- 중단: 비포애프터 핵심수치 -->
-              <div class="grid gap-3 sm:grid-cols-3 text-sm md:text-[0.95rem]">
-                <div>
-                  <p class="content-text-strong mb-1">DB단가</p>
-                  <p class="content-text-lg">
-                    4만원→<span class=" highlight-text">0.7~1.5만원 </span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">하루 DB</p>
-                  <p class="content-text-lg">
-                    일평균 <span class=" highlight-text">20~33건</span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">부재 / 허수</p>
-                  <p class="content-text-lg">
-                    지속개선+<span class=" highlight-text">품질향상</span>
-                  </p>
-                </div>
-              </div>
-              <!-- 하단: 카톡대화+성과캡처 -->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡대화 캡처 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/loan-kakao001.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/loan-kakao002.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                </div>
-                <!-- 광고 관리자 성과 캡쳐 -->
-                <figure class="space-y-2">
-                  <img
-                    src="./img/loan-data001.png"
-                    alt=""
-                    class="img-base w-full h-full object-cover"
-                  />
-                </figure>
-              </div>
-            </article>
-            <!-- 3번 카드: 보험 GA -->
-             <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
-              <!-- 상단: 업종 라벨+헤드+서브-->
-              <header class="space-y-2">
-                <span class="content-badge-main px-3 py-1">
-                  보험·리모델링
-                </span>
-                <h3 class="content-text-strong highlight-text">
-                  FC들 월납 2,000 이상 되는거 같아요
-                </h3>
-                <p class="content-text-lg">
-                  <span class="highlight-bg">"DB단가도 절반 이상 줄었는데, DB질은 오히려 좋아졌네요.</span> 팀전체 에너지가 달라졌어요."
-                </p>
-              </header>
-              <!-- 중단: 비포애프터 핵심 수치 -->
-              <div class="grid gap-3 sm:grid-cols-3 text-sm md:text-[0.95rem]">
-                <div>
-                  <p class="content-text-strong mb-1">DB단가</p>
-                  <p class="content-text-lg">
-                    4만원→<span class=" highlight-text">1.7~2만원 </span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">하루 DB</p>
-                  <p class="content-text-lg">
-                    일평균 <span class=" highlight-text">15~32건</span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">부재 / 허수</p>
-                  <p class="content-text-lg">
-                    지속개선 +<span class=" highlight-text"> 품질향상</span>
-                  </p>
-                </div>
-              </div>
-              <!-- 하단: 성과 + 카톡 -->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡 캡처대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/insurance-kakao002.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/insurance-kakao003.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                </div>
-                <!-- 광고 관리자 성과캡처 -->
-                <figure class="space-y-2">
-                  <img
-                    src="./img/insurance-data001.png"
-                    alt=""
-                    class="img-base w-full h-full object-cover"
-                  />
-                </figure>
-              </div>
-            </article>
-            <!-- 4번 카드: 정책자금 -->
-            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
-              <!-- 상단: 업종 라벨+헤드+서브-->
-              <header class="space-y-2">
-                <span class="content-badge-main px-3 py-1">
-                  정책자금
-                </span>
-                <h3 class="content-text-strong highlight-text">
-                  미팅 일정이 벌써 꽉찼어요
-                </h3>
-                <p class="content-text-lg">
-                  "예전에 부재랑 허수때문에 고생했습니다. <br class="block md:hidden" /><span class="highlight-bg">홈페이지랑 광고운영 함께 맡긴게 확실히 좋네요."</span>
-                </p>
-              </header>
-              <!-- 중간: 비포 애프터 핵심수치 -->
-              <div class="grid gap-3 sm:grid-cols-3 text-sm md:text-[0.95rem]">
-                <div>
-                  <p class="content-text-strong mb-1">DB단가</p>
-                  <p class="content-text-lg">
-                    6만원→<span class=" highlight-text">1.4~2만원 </span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">하루 DB</p>
-                  <p class="content-text-lg">
-                    일평균 <span class=" highlight-text">10~24건</span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">부재 / 허수</p>
-                  <p class="content-text-lg">
-                    지속개선 +<span class=" highlight-text"> 품질향상</span>
-                  </p>
-                </div>
-              </div>
-              <!-- 하단: 성과 + 카톡 -->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡 캡처 대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/policyfunds-kakao001.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/policyfunds-kakao003.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                </div>
-                <!-- 광고 관리자 성과캡처 -->
-                <figure class="space-y-2">
-                  <img
-                    src="./img/policyfunds-data001.png"
-                    alt=""
-                    class="img-base w-full h-full object-cover"
-                  />
-                </figure>
-              </div>
-            </article>
-            <!-- 5번 카드: 인터넷 -->
-            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
-              <!-- 상단: 업종 라벨+헤드+서브-->
-              <header class="space-y-2">
-                <span class="content-badge-main px-3 py-1">
-                  인터넷 가입
-                </span>
-                <h3 class="content-text-strong highlight-text">
-                  이번주 부재율 20%대에요
-                </h3>
-                <p class="content-text-lg">
-                 "예전에 DB하나에 2만원 넘었는데, <span class="highlight-bg">지금은 훨씬 저렴해서 좋네요. 실접수율도 많이 올랐습니다."</span>
-                </p>
-              </header>
-              <!-- 중단: 비포 애프터 핵심수치 -->
-              <div class="grid gap-3 sm:grid-cols-3">
-                <div>
-                  <p class="content-text-strong mb-1">DB단가</p>
-                  <p class="content-text-lg">
-                    2.5만원→<span class=" highlight-text">0.8~1.3만원 </span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">하루 DB</p>
-                  <p class="content-text-lg">
-                    일평균 <span class=" highlight-text">18~32건</span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">부재 / 허수</p>
-                  <p class="content-text-lg">
-                    지속개선 +<span class="highlight-text"> 품질향상</span>
-                  </p>
-                </div>
-              </div>
-              <!-- 하단: 성과 + 카톡 -->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡대화 캡처 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/Internet-kakao001.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/Internet-kakao002.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                </div>
-                <!-- 광고 관리자 성과캡처 -->
-                <figure class="space-y-2">
-                  <img
-                    src="./img/internet-data001.png"
-                    alt=""
-                    class="img-base w-full h-full object-cover"
-                  />
-                </figure>
-              </div>
-            </article>
-            <!-- 6번 카드: 두피관리 -->
-            <article class="surface-card p-6 md:p-7 flex flex-col gap-5 fx-card-glow-primary">
-              <!-- 상단: 업종 라벨+헤드+서브-->
-              <header class="space-y-2">
-                <span class="content-badge-main px-3 py-1">
-                  두피관리
-                </span>
-                <h3 class="content-text-strong highlight-text">
-                 DB 잠깐 멈춰달라고 하드라구요
-                </h3>
-                <p class="content-text-lg">
-                  "초반까지만 해도 부재가 꽤 있었는데, 지금은 많이 줄었습니다. <span class="highlight-bg">방문체험 하시는 고객분들이 늘었어요."</span>
-                </p>
-              </header>
-              <!-- 중단: 비포 애프터 핵심수치 -->
-              <div class="grid gap-3 sm:grid-cols-3 text-sm md:text-[0.95rem]">
-                <div>
-                  <p class="content-text-strong mb-1">DB단가</p>
-                  <p class="content-text-lg">
-                    3만원→<span class=" highlight-text">1.5만원 </span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">하루 DB</p>
-                  <p class="content-text-lg">
-                    일평균 <span class=" highlight-text">25~42건</span>
-                  </p>
-                </div>
-                <div>
-                  <p class="content-text-strong mb-1">부재 / 허수</p>
-                  <p class="content-text-lg">
-                    지속개선 +<span class=" highlight-text"> 품질향상</span>
-                  </p>
-                </div>
-              </div>
-              <!-- 하단: 성과 + 카톡 -->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡 캡처대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/scalp-kakao001.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/scalp-kakao002.jpg"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                </div>
-                <!-- 광고 관리자 성과캡처 -->
-                <figure class="space-y-2">
-                  <img
-                    src="./img/scalp-data001.png"
-                    alt=""
-                    class="img-base w-full h-full object-cover"
-                  />
-                </figure>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <!-- =============== 섹션 5. CTA + Form =============== -->
-      <section id="cta" class="section py-16 md:py-24 fx-bg-bubbles">
+      <section id="cta" class="section py-16 md:py-20 fx-bg-bubbles">
         <div class="container mx-auto grid max-w-5xl items-start gap-10 px-4 lg:grid-cols-2">
           <!-- (좌) CTA -->
           <article class="surface-cta p-6 flex flex-col items-center md:items-start space-y-5 text-center md:text-left fx-card-glow-primary">
