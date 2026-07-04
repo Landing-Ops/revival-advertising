@@ -21,7 +21,7 @@ Note뜻: 참고사항/주의문/추가설명
 .header-head-text {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.85rem; /* 26px - pt 나누기 16 rem값 */
+  font-size: 24px;
   color: var(--neutral-900);
   line-height: 1.3;
   letter-spacing: -0.01em;
@@ -30,7 +30,7 @@ Note뜻: 참고사항/주의문/추가설명
 .header-sub-text {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 1.375rem; /* 22px */
+  font-size: 20px; /* 22px */
   color: var(--neutral-600);
   line-height: 1.5;
 }
@@ -38,7 +38,7 @@ Note뜻: 참고사항/주의문/추가설명
 .header-lead-text {
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 1.125rem;      /* 18px 정도 */
+  font-size: 18px;    /* 18px 정도 */
   color: var(--neutral-700);
   line-height: 1.5;
 }
@@ -46,7 +46,7 @@ Note뜻: 참고사항/주의문/추가설명
 .header-note-text {
   font-family: var(--font-body);
   font-weight: 200;
-  font-size: 0.875rem;      /* 14px 정도 */
+  font-size: 14px;     /* 14px 정도 */
   color: var(--neutral-700);
   line-height: 1.5;
 }
@@ -57,7 +57,7 @@ Note뜻: 참고사항/주의문/추가설명
 .content-text-strong {
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 1.25rem;          /* 20px */
+  font-size: 20px;          /* 20px */
   color: var(--neutral-900);
   line-height: 1.7;
 }
@@ -66,7 +66,7 @@ Note뜻: 참고사항/주의문/추가설명
 .content-text-lg {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 1.125rem;     /* 18px */
+  font-size: 18px;    /* 18px */
   color: var(--neutral-800);
   line-height: 1.5;
 }
@@ -75,7 +75,7 @@ Note뜻: 참고사항/주의문/추가설명
 .content-text {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 1rem;          /* 16px */
+  font-size: 16px;        /* 16px */
   color: var(--neutral-800);
   line-height: 1.5;
 }
@@ -84,7 +84,7 @@ Note뜻: 참고사항/주의문/추가설명
 .content-text-sm {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 0.9375rem;     /* 15px */
+  font-size: 15px;     /* 15px */
   color: var(--neutral-700);
   line-height: 1.5;
 }
@@ -93,7 +93,7 @@ Note뜻: 참고사항/주의문/추가설명
 .content-caption {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 0.8125rem;     /* 13px */
+  font-size: 13px;     /* 13px */
   color: var(--neutral-600);
   line-height: 1.5;
 }
