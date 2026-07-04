@@ -456,7 +456,7 @@ function closeModal() {
     });
   }
 
-  // X 버튼 + 배경 클릭 → 닫기
+  // X 버튼 + 배경 클릭 → 닫기 
   closeEls.forEach(function (el) {
     el.addEventListener('click', function () {
       closeModal();
