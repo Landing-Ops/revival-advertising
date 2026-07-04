@@ -12,7 +12,7 @@
   var GOOGLE_FORM_ACTION =
     'https://docs.google.com/forms/d/e/1FAIpQLSdnayRSJu0CdjdqFLh676JL7qr8BWrE33WVgqvk2e4qy6SDCw/formResponse';
 
-  var THANKYOU_URL = 'https://landingops.com/result';
+  var THANKYOU_URL = 'https://landing-ops.github.io/revival-advertising/result';
 
   // 버튼 컬러(활성/비활성) – 필요하면 여기서만 수정하면 됨
   var BTN_ACTIVE_BG   = '#1f5fae'; // 기본 파란색
@@ -55,14 +55,6 @@
         entryName: 'entry.1192404920',
         type: 'phone',
         message: '핸드폰 번호를 입력해주세요.'
-      },
-      {
-        key: 'industry',
-        selector: '[data-field="industry"]',
-        entryName: 'entry.1418567288',
-        type: 'text',
-        minLength: 2,
-        message: '업종을 입력해주세요.'
       },
       {
         key: 'dbcount',
