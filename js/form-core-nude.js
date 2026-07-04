@@ -10,7 +10,7 @@
   // 1. 기본 설정 (Google Form / Thank-you URL)
   // ─────────────────────────────
   var GOOGLE_FORM_ACTION =
-    'https://docs.google.com/forms/d/e/1FAIpQLSdnayRSJu0CdjdqFLh676JL7qr8BWrE33WVgqvk2e4qy6SDCw/formResponse';
+    'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfWbziFZG-K4ZCfMEVt4p0lr77ypHsqR8c6zIJn62Cq-qDWUA/formResponse';
 
   var THANKYOU_URL = 'https://landing-ops.github.io/revival-advertising/result';
 
@@ -44,7 +44,7 @@
       {
         key: 'name',
         selector: '[data-field="name"]',
-        entryName: 'entry.1237659122',       // Google Form entry
+        entryName: 'entry.1800126228',       // Google Form entry
         type: 'text',                        // text / phone / textarea / select / checkbox
         minLength: 2,
         message: '이름을 입력해주세요.'
@@ -52,21 +52,21 @@
       {
         key: 'phone',
         selector: '[data-field="phone"]',
-        entryName: 'entry.1192404920',
+        entryName: 'entry.317663158',
         type: 'phone',
         message: '핸드폰 번호를 입력해주세요.'
       },
       {
         key: 'dbcount',
         selector: '[data-field="dbcount"]',
-        entryName: 'entry.1091907877',
+        entryName: 'entry.621107204',
         type: 'select',
         message: '하루에 필요한 DB 갯수를 선택해주세요.'
       },
       {
         key: 'message',
         selector: '[data-field="message"]',
-        entryName: 'entry.1896749595',
+        entryName: 'entry.1862750613',
         type: 'textarea',
         minLength: 2,
         message: '문의사항을 입력해주세요.'
@@ -80,7 +80,7 @@
       {
         key: 'source',
         selector: '[data-field="source"]',  //  유입매체&타겟정보
-        entryName: 'entry.299243927',  // ← 구글 폼에서 실제 매체 필드 entry.* 값으로 맞춰줘야 함
+        entryName: 'entry.475395218',  // ← 구글 폼에서 실제 매체 필드 entry.* 값으로 맞춰줘야 함
         type: 'hidden',
         message: '유입 경로 정보가 없습니다.'
       }
