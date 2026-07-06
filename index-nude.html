@@ -80,6 +80,7 @@
 
 
   <!--전환 스크립트 -->
+
   </head>
   <body data-industry="ngo">
 
@@ -255,7 +256,7 @@
       <hr class="divider" />
       <!-- =============== 섹션 3. 성과 / 증거(Proof) =============== -->
       <section id="proof" class="section-alt py-16 md:py-20 fx-bg-soft-lines">
-        <div class="container mx-auto max-w-8xl px-4">
+        <div class="container mx-auto max-w-6xl px-4">
           <header class="text-center max-w-3xl mx-auto">
             <p class="header-badge-riverse mb-3">실제 성과사례</p>
             <h2 class="header-head-text md:text-4xl">
@@ -299,23 +300,39 @@
                 </div>
               </div>
               <!-- 하단: 카톡캡처 + 성과캡쳐-->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4"> 
-                <!-- 카톡 캡처대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-1-1.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-1-2.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-3">
+                <div class="katok-slider relative" data-slider>
+                  <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-300 ease-out" data-track>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[3/4] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-1-1.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[3/4] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-1-2.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 좌우 버튼 -->
+                <button type="button"
+                  class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-prev aria-label="이전 이미지">
+                  <i data-lucide="chevron-left" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+                <button type="button"
+                  class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-next aria-label="다음 이미지">
+                  <i data-lucide="chevron-right" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+
+                  <!-- 인디케이터 점 -->
+                  <div class="flex justify-center gap-1.5 mt-2" data-dots>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -349,23 +366,39 @@
                 </div>
               </div>
               <!-- 하단: 카톡캡처 + 성과캡쳐-->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡 캡처대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-2-1.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-2-2.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-3">
+                <div class="katok-slider relative" data-slider>
+                  <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-300 ease-out" data-track>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[3/4] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-2-1.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[3/4] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-2-2.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 좌우 버튼 -->
+                <button type="button"
+                  class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-prev aria-label="이전 이미지">
+                  <i data-lucide="chevron-left" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+                <button type="button"
+                  class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-next aria-label="다음 이미지">
+                  <i data-lucide="chevron-right" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+
+                  <!-- 인디케이터 점 -->
+                  <div class="flex justify-center gap-1.5 mt-2" data-dots>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -399,23 +432,39 @@
                 </div>
               </div>
               <!-- 하단: 카톡캡처 + 성과캡쳐-->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡 캡처대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-3-1.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-3-2.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-3">
+                <div class="katok-slider relative" data-slider>
+                  <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-300 ease-out" data-track>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                       <div class="w-full max-w-[500px] mx-auto aspect-[3/4] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-3-1.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[3/4] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-3-2.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 좌우 버튼 -->
+                <button type="button"
+                  class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-prev aria-label="이전 이미지">
+                  <i data-lucide="chevron-left" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+                <button type="button"
+                  class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-next aria-label="다음 이미지">
+                  <i data-lucide="chevron-right" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+
+                  <!-- 인디케이터 점 -->
+                  <div class="flex justify-center gap-1.5 mt-2" data-dots>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -449,23 +498,39 @@
                 </div>
               </div>
               <!-- 하단: 카톡캡처 + 성과캡쳐-->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡 캡처대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-4-1.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-4-2.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-3">
+                <div class="katok-slider relative" data-slider>
+                  <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-300 ease-out" data-track>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[3/4] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-4-1.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[3/4] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-4-2.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 좌우 버튼 -->
+                <button type="button"
+                  class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-prev aria-label="이전 이미지">
+                  <i data-lucide="chevron-left" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+                <button type="button"
+                  class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-next aria-label="다음 이미지">
+                  <i data-lucide="chevron-right" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+
+                  <!-- 인디케이터 점 -->
+                  <div class="flex justify-center gap-1.5 mt-2" data-dots>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -499,23 +564,39 @@
                 </div>
               </div>
               <!-- 하단: 카톡캡처 + 성과캡쳐-->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡 캡처대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-5-1.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-5-2.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-3">
+                <div class="katok-slider relative" data-slider>
+                  <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-300 ease-out" data-track>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[5/8] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-5-1.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[5/8] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-5-2.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 좌우 버튼 -->
+                <button type="button"
+                  class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-prev aria-label="이전 이미지">
+                  <i data-lucide="chevron-left" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+                <button type="button"
+                  class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-next aria-label="다음 이미지">
+                  <i data-lucide="chevron-right" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+
+                  <!-- 인디케이터 점 -->
+                  <div class="flex justify-center gap-1.5 mt-2" data-dots>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -549,23 +630,39 @@
                 </div>
               </div>
               <!-- 하단: 카톡캡처 + 성과캡쳐-->
-              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-4">
-                <!-- 카톡 캡처대화 (2장) -->
-                <div class="grid gap-3 grid-cols-2">
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-7-1.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
-                  <figure class="space-y-2">
-                    <img
-                      src="./img/katok-7-2.png"
-                      alt=""
-                      class="img-base w-full h-full object-cover"
-                    />
-                  </figure>
+              <div class="mt-4 pt-4 border-t border-[var(--neutral-200)] space-y-3">
+                <div class="katok-slider relative" data-slider>
+                  <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-300 ease-out" data-track>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[5/8] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-7-1.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                      <div class="w-full flex-shrink-0 flex justify-center">
+                        <div class="w-full max-w-[500px] mx-auto aspect-[5/8] overflow-hidden rounded-lg bg-[var(--surface-alt)] flex items-center justify-center">
+                        <img src="./img/katok-7-2.png" alt="" class="img-base max-w-[500px] w-full object-contain mx-auto block" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 좌우 버튼 -->
+                <button type="button"
+                  class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-prev aria-label="이전 이미지">
+                  <i data-lucide="chevron-left" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+                <button type="button"
+                  class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full shadow flex items-center justify-center transition-colors bg-[var(--color-cta-main)] hover:bg-[var(--color-cta-main-hover)]"
+                  data-next aria-label="다음 이미지">
+                  <i data-lucide="chevron-right" class="icon w-8 h-8 md:w-10 md:h-10 text-[var(--color-cta-main-text)]"></i>
+                </button>
+
+                  <!-- 인디케이터 점 -->
+                  <div class="flex justify-center gap-1.5 mt-2" data-dots>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--neutral-300)] transition-opacity" data-dot></span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -966,8 +1063,45 @@
   </div>
 </div>
 
-  <!-- 자바스크립트 -->
+<!-- 자바스크립트 -->
+<!-- 카톡 캡처 슬라이더 -->
+<script>
+  (function () {
+    function initKatokSliders() {
+      document.querySelectorAll('[data-slider]').forEach((slider) => {
+        const track = slider.querySelector('[data-track]');
+        const slides = track.children;
+        const dots = slider.querySelectorAll('[data-dot]');
+        const prevBtn = slider.querySelector('[data-prev]');
+        const nextBtn = slider.querySelector('[data-next]');
+        let current = 0;
 
+        function update() {
+          track.style.transform = `translateX(-${current * 100}%)`;
+          dots.forEach((dot, i) => {
+            dot.style.opacity = i === current ? '1' : '0.4';
+          });
+        }
+
+        prevBtn.addEventListener('click', () => {
+          current = (current - 1 + slides.length) % slides.length;
+          update();
+        });
+
+        nextBtn.addEventListener('click', () => {
+          current = (current + 1) % slides.length;
+          update();
+        });
+
+        update();
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', initKatokSliders);
+  })();
+</script>
+
+    <!-- 아이콘 -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
