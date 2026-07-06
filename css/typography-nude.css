@@ -24,7 +24,7 @@ Note뜻: 참고사항/주의문/추가설명
   font-size: 24px;
   color: var(--neutral-900);
   line-height: 1.3;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.01em; 
 }
 
 .header-sub-text {

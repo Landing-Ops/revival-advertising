@@ -1038,7 +1038,7 @@ body.is-modal-open {
   border: var(--border-1) solid var(--color-solution-border);    /*★역할토큰★*/
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md);
-}
+} 
 
 /* 해결 과정 단계 3~6스텝 모듈 래퍼 */
 .solution-steps {
