@@ -12,7 +12,7 @@
   var GOOGLE_FORM_ACTION =
     'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfWbziFZG-K4ZCfMEVt4p0lr77ypHsqR8c6zIJn62Cq-qDWUA/formResponse';
 
-  var THANKYOU_URL = 'https://landing-ops.github.io/revival-advertising/result';
+  var THANKYOU_URL = 'https://landingops.com/result';
 
   // 버튼 컬러(활성/비활성) – 필요하면 여기서만 수정하면 됨
   var BTN_ACTIVE_BG   = '#1f5fae'; // 기본 파란색
@@ -40,7 +40,23 @@
     // (2) 필드 설정
     // 광고주/폼 항목이 바뀌면 "여기 FIELD_CONFIG만" 수정하면 됨
     var FIELD_CONFIG = [
-      // 
+      //
+      {
+        key: 'officename',
+        selector: '[data-field="officename"]',
+        entryName: 'entry.1481869929',      
+        type: 'text',                        
+        minLength: 2,
+        message: '사무소명을 입력해주세요.'
+      },
+      {
+        key: 'position',
+        selector: '[data-field="position"]',
+        entryName: 'entry.262090509',      
+        type: 'text',                       
+        minLength: 2,
+        message: '직책을 입력해주세요'
+      },
       {
         key: 'name',
         selector: '[data-field="name"]',

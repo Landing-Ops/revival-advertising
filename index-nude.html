@@ -777,6 +777,28 @@
             method="post"
             data-evt="form_submit"
           >
+           <div>
+                <label class="label" for="officename">사무소명</label>
+                <input
+                  data-field="officename"
+                  name="officename"
+                  type="text"
+                  class="input w-full px-4 py-3"
+                  placeholder="법무법인AA/법률사무소BB/CC법무사사무소"
+                  required
+                />
+           </div>
+           <div>
+              <label class="label" for="position">직책</label>
+              <input
+                data-field="position"
+                name="position"
+                type="text"
+                class="input w-full px-4 py-3"
+                placeholder="변호사/법무사/사무국장/팀장 등"
+                required
+              />
+            </div>
             <div>
               <label class="label" for="name">이름</label>
               <input
@@ -1108,7 +1130,7 @@
     <script>
       lucide.createIcons();
     </script>
-    <script src="./js/form-core-nude.js"></script>
+    <script src="./js/form-core.js"></script>
     
     <script> 
       window.LANDING_SOURCE = '인덱스';  //📌 어떤 매체 유입인지 라벨링
